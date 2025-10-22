@@ -1,0 +1,29 @@
+{
+    "FullyConnected": {
+      "parameters": 567434,
+      "training_time_seconds": 78.93381237983704,
+      "inference_time_ms": 0.21996736526489258,
+      "final_train_accuracy": 0.9794166666666667,
+      "final_test_accuracy": 0.9806,
+      "final_train_loss": 0.0667781023722418,
+      "final_test_loss": 0.0679055787227617
+    },
+    "SimpleCNN": {
+      "parameters": 421642,
+      "training_time_seconds": 78.77362298965454,
+      "inference_time_ms": 0.3699922561645508,
+      "final_train_accuracy": 0.99255,
+      "final_test_accuracy": 0.9919,
+      "final_train_loss": 0.022956859632756368,
+      "final_test_loss": 0.024641016553524294
+    },
+    "ResidualCNN": {
+      "parameters": 160906,
+      "training_time_seconds": 92.17410612106323,
+      "inference_time_ms": 0.8638763427734375,
+      "final_train_accuracy": 0.9932333333333333,
+      "final_test_accuracy": 0.993,
+      "final_train_loss": 0.021738660940025467,
+      "final_test_loss": 0.021291149100078118
+    }
+}
