@@ -291,16 +291,14 @@ def plot_residual_effectiveness():
 def visualize_feature_maps_from_models():
     device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
     
-    # Загружаем одно изображение из CIFAR-10
     transform = transforms.Compose([
         transforms.ToTensor(),
         transforms.Normalize((0.4914, 0.4822, 0.4465), (0.2023, 0.1994, 0.2010))
     ])
     test_dataset = datasets.CIFAR10(root='./data', train=False, download=True, transform=transform)
-    image, label = test_dataset[0]  # Берём первое изображение
-    image = image.unsqueeze(0).to(device)  # Добавляем batch dim
+    image, label = test_dataset[0]
+    image = image.unsqueeze(0).to(device)
 
-    # Определяем модели
     model_classes = {
         'ShallowCNN': ShallowCNN,
         'MediumCNN': MediumCNN,
